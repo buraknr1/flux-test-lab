@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-app-config
+data:
+  app_name: "Demo ViraSight App"
+  environment: "test-lab"
