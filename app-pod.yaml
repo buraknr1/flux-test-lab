@@ -4,9 +4,14 @@ metadata:
   name: test-web-app
   labels:
     app: test-web-app
+    tier: frontend
+    env: staging
 spec:
   containers:
   - name: nginx
     image: nginx:alpine
     ports:
     - containerPort: 80
+    env:
+    - name: VERSION
+      value: "1.0.1"
